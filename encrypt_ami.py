@@ -47,8 +47,8 @@ def encrypt_ami(instance_id, ami_name = "", src_region = "us-east-1", dest_regio
     :param ami_name: (Optional) AMI Name
     :param src_region: (Optional) Region where your instance sits. Default = us-east-1
     :param dest_region: (Optional) Region where you want the encrypted AMI to sit. Default = src_region
-    :param reboot_instance: (Optional) Whether you want the EC2 instance to be rebooted while creating the AMI
-    :param kms_key_arn: (Optional) ARN of KMS Key
+    :param reboot_instance: True | False (Optional) Whether you want the EC2 instance to be rebooted while creating the AMI. Default = True
+    :param kms_key_arn: (Optional) ARN of KMS Key. Default = ""
     :return: Encrypted AMI ID
     """
 
